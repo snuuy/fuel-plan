@@ -1,0 +1,29 @@
+ {
+    "name": "FuelPlan",
+    "version": "1.0",
+    "description": "Estimate the cost of your trip on Google Maps",
+    "permissions": ["activeTab", "declarativeContent", "storage"],
+    "content_security_policy": "script-src 'self' https://ajax.googleapis.com; object-src 'self'",
+    "background": {
+      "scripts": ["js/background.js","js/jquery.min.js"],
+      "persistent": false
+    },
+    "page_action": {
+        "default_popup": "popup.html"
+      },
+      "content_scripts": [
+        {
+          "matches": ["*://*/*"],
+          "js": ["js/jquery.min.js","js/content-script.js"]
+        }
+      ],
+
+      "icons": {
+        "16": "img/icon/icon16.png",
+        "32": "img/icon/icon32.png",
+        "48": "img/icon/icon48.png",
+        "128": "img/icon/icon128.png"
+      },
+    "web_accessible_resources": ["pump.png"],
+    "manifest_version": 2   
+  }
