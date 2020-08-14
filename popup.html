@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="popup.js"></script>
+    </head>
+    <div class="logo">
+        <img src="pump.png" class="logoimg"/>
+        FuelPlan
+    </div>
+    <div class="line"></div>
+    <div class="selecttext">Select your vehicle</div>
+    <select id="year">
+        <option value="" disabled selected>Year</option>
+    </select>
+    <select id="make">
+        <option value="" disabled selected>Make</option>
+    </select>
+    <select id="model">
+        <option value="" disabled selected>Model</option>
+    </select>
+    <select id="options">
+        <option value="" disabled selected>Trim</option>
+    </select><br>
+    <div class="box">
+        <td>
+            <div style="float:left;width:50%;">Gas Price ($): </div>
+            <div style="float:right;width:50%;"><input id="fuelPrice" type="text" class="priceInput"/></div>
+        </td><br><br>
+        <td>
+            <div style="float:left;width:50%;">Avg. Fuel Economy: </div>
+            <div style="float:right;width:50%;"><span id="mileage">N/A</span></div>
+        </td>
+    </div>
+    <div class="line"></div>
+    <div class="maps">
+        <img src="mapsicon.png" class="mapsimg"/>
+        Search for directions on Google Maps to see trip cost estimates.
+    </div>
+</html>
